@@ -1,0 +1,25 @@
+format:
+  pdf:
+    fontsize: 12pt
+    documentclass: article
+    papersize: letter
+    include-in-header: preamble.tex
+    include-before-body: title.tex
+    toc: false
+    number-sections: true
+    number-depth: 2
+    linestretch: 1.5
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1in
+      - right=1in
+    pdf-engine: xelatex
+    mainfont: "TeX Gyre Termes"
+    sansfont: "TeX Gyre Termes"
+    fig-pos: "H"
+
+execute:
+  echo: false
+  warning: false
+  message: false

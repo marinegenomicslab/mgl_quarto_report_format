@@ -1,0 +1,57 @@
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage} 
+
+% Define heading (adjust as needed)
+\definecolor{heading}{RGB}{0,0,0}
+
+% SECTION HEADINGS
+\titleformat{\section}
+  {\Large\bfseries\color{heading}}   % style
+  {\thesection}                          % number
+  {0.5em}                                 % spacing after number
+  {}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{heading}}
+  {\thesubsection}
+  {0.5em}
+  {}
+
+\pagestyle{fancy}
+
+% Clear all default headings/footers
+\fancyhf{}
+
+% --------------------
+% HEADER
+% --------------------
+\renewcommand{\headrulewidth}{0.4pt}  % line under header
+
+\fancyhead[L]{$title$}
+
+% --------------------
+% FOOTER
+% --------------------
+%\renewcommand{\footrulewidth}{0.4pt}  % line above footer
+
+%\fancyfoot[L]{Matt, Hollenbeck: 20 November 2025}
+%\fancyfoot[R]{\thepage}
+
+% --------------------
+% TITLE PAGE WITHOUT NUMBER
+% --------------------
+\fancypagestyle{firstpage}{
+  \fancyhf{}              % clear everything
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\makeatletter
+\renewcommand{\maketitle}{}
+\makeatother

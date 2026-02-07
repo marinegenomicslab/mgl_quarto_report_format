@@ -1,0 +1,90 @@
+\begin{titlepage}
+\thispagestyle{empty}
+
+%\definecolor{marineblue}{HTML}{1C5FB8}  % deep marine blue
+
+\begin{tikzpicture}[remember picture, overlay]
+  \path (current page.north west);
+  \draw[line width=0.8pt]
+    ($$(current page.north west) + (3in,-1in)$$)
+      --
+    ($$(current page.south west) + (3in,1in)$$);
+\end{tikzpicture}
+
+\hspace*{-1cm}\includegraphics[width=5cm]{MGL_blues.jpg}
+
+
+\noindent\hfill
+\begin{minipage}{4in}
+  \raggedright
+{\fontsize{28}{40}\selectfont\bfseries
+  $title$}
+\end{minipage}
+
+\vspace*{2in}
+
+\noindent\hfill
+\begin{minipage}{4in}
+  \raggedright
+{\fontsize{16}{20}\selectfont\bfseries
+$for(author)$
+  $author$\\[0.2em]
+$endfor$
+}
+\end{minipage}
+
+\vspace*{0.35in}
+
+\noindent\hfill
+\begin{minipage}{7in}
+  \raggedright
+{\fontsize{16}{20}\selectfont
+  Marine\\[0.1em]
+  Genomics Lab\\[0.1em]}
+\end{minipage}
+
+\vspace*{-0.20in}
+
+\noindent\hfill
+\begin{minipage}{4in}
+  \raggedright
+{\fontsize{14}{18}\selectfont
+$client-block$
+}
+\end{minipage}
+
+\vspace*{-0.2in}
+
+\noindent\hfill
+\begin{minipage}{6.75in}
+  \raggedright
+{\fontsize{14}{18}\selectfont
+ Texas A\&M\\[0.1em]
+  University\\[0.1em]
+  Corpus Christi\\[0.1em]}
+\end{minipage}
+
+
+\vspace*{0.05in}
+
+\noindent\hfill
+\begin{minipage}{4in}
+  \raggedright
+{\fontsize{14}{18}\selectfont\bfseries
+  $date$}
+\end{minipage}
+
+
+\vspace*{0.05in}
+
+\noindent\hfill
+\begin{minipage}{7in}
+  \raggedright
+{\fontsize{14}{18}\selectfont
+ 6300 Ocean Dr\\[0.1em]
+  Corpus Christi\\[0.1em]
+  TX 78412\\[0.1em]}
+\end{minipage}
+
+
+\end{titlepage}

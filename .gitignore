@@ -1,0 +1,6 @@
+.quarto/
+.quarto-cache/
+*.pdf
+*.aux
+*.log
+*.out
